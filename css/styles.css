@@ -1,0 +1,110 @@
+:root{
+    --main-color:#179951;
+    --main-color2:#0545a3;
+}
+html,body{
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #333;
+}
+/* =======header====== */
+.header{
+    min-height: 60vh;
+    background: url('../img/background.jpg') center center no-repeat;
+    background-size: cover;
+}
+/* =====navbar====== */
+.navbar{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.navbar .navbar-brand{
+    letter-spacing: 0.3rem;
+    font-size: 1.8rem;
+    background: -webkit-linear-gradient(90deg, black, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* ====Navbar menu===== */
+#navbarNav ul{
+    margin-left: auto;
+}
+.navbar .nav-link {
+    color: var(--main-color) !important;
+    letter-spacing:  0.2rem; 
+}
+.navbar .active {
+    color: var(--main-color2) !important;
+}
+.navbar .nav-link:hover {
+    color: var(--main-color2) !important;
+}
+
+/* ========hero text======= */
+.hero-text{
+    font-size: 1.5rem;
+}
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+/* skill section */
+.section-title{
+    margin: 3rem;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills div{
+    min-width: 30%;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.about-me{
+    background-image: linear-gradient(90deg, #fe529e 40%,#ff1391 50%);
+}
+
+.myproject{
+    background-image: linear-gradient(90deg, #883561 40%,rgb(151, 45, 71) 60%);
+}
+.social-media{
+    background-color: black;
+    color: white;
+}
+.social-media .i{
+    text-decoration: none;
+    color: var(--main-color) !important;
+}
+.contact{
+    background-color: whitesmoke;
+}
+/* =====go to======= */
+footer{
+    position:relative;
+}
+#to-up{
+    position: fixed;
+    background: blue;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 999;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+
+}
